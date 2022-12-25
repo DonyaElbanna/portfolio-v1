@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" type="text/html" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- bkg circles -->
+    <div class="bg-circles">
+        <div class="circle-1"></div>
+        <div class="circle-2"></div>
+        <div class="circle-3"></div>
+        <div class="circle-4"></div>
+        <div class="circle-5"></div>
+        <div class="circle-6"></div>
+        <div class="circle-7"></div>
+        <div class="circle-8"></div>
+        <div class="circle-9"></div>
+    </div>
+    <!-- Content -->
+    <div class="content">
+        <!-- Home -->
+        <section class="section">
+            <div id="home">
+                <p>Hi! I'm</p>
+                <h1><strong id="name">Donya</strong></h1>
+                <p>Front-end Web Developer</p>
+                <p>
+                    HTML5 - CSS3 - JavaScript - ES6 - React - React&Redux - Bootstrap -
+                    Webpack - Git
+                </p>
+                <div class="icons">
+                    <a href="https://www.linkedin.com/in/donya-elbanna/" target="_blank"
+                        aria-label="linkedin-icon-link"><img class="icon" src="./icons/linkedin.png"
+                            alt="linkedin-icon" />
+                    </a>
+                    <a href="https://codepen.io/donyaelbanna" target="_blank" class="icon"
+                        aria-label="codepen-icon-link"><img class="icon" src="./icons/codepen.png" alt="codepen-icon" />
+                    </a>
+                    <a href="https://github.com/DonyaElbanna" target="_blank" class="icon"
+                        aria-label="github-icon-link">
+                        <img class="icon" src="./icons/github.png" alt="github-icon" />
+                    </a>
+                </div>
+                <div class="center-btns">
+                    <a href="#about" class="btn">About Me</a>
+                    <a href="#portfolio" class="btn">Portfolio</a>
+                    <a href="#contact" class="btn">Contact Me</a>
+                </div>
+            </div>
+        </section>
+        <div class="arrow bounce hidden"></div>
+        <!-- About -->
+        <section class="section">
+            <div id="about">
+                <h2>About Me</h2>
+                <div class="about-text">
+                    <p>
+                        I am a self-taught web developer, specializing in front-end web
+                        technologies. My main experience is from online courses and
+                        projects I do to apply what I learn. I am a quick learner and a
+                        hard worker with a motivation to excel in the field. Currently I
+                        am looking for a junior position as a web developer to learn from
+                        seniors the best practices in code, and get ground expereince.
+                    </p>
+                    <div class="about-tabs">
+                        <span class="tab-item active" data-target="#education">
+                            Education & Courses
+                        </span>
+                        <span class="tab-item" data-target="#experience">
+                            Experience & Projects
+                        </span>
+                    </div>
+                    <!-- Education -->
+                    <div class="tab-content active" id="education">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <span class="date">Mar 2021 - Aug 2021</span>
+                                <h5>
+                                    Web Development Specialization degree,
+                                    <i>University of Michigan - Coursera</i>
+                                </h5>
+                                <p class="about-p">
+                                    Skills achieved: HTML5 - CSS3 - JS - Web accessibility -
+                                    Responsive Web Design.
+                                </p>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="date">Mar 2022</span>
+                                <h5>
+                                    HTML, CSS & JavaScript - Database Fundamentals,
+                                    <i>Maharatech</i>
+                                </h5>
+                                <p class="about-p">
+                                    Skills achieved: HTML5 - CSS3 - JavaScript - SQL.
+                                </p>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="date">2013 - 2018</span>
+                                <h5>
+                                    B.S. in Physics,
+                                    <i>Zewail City for Science and Technology</i>
+                                </h5>
+                                <p class="about-p">
+                                    Double majored in Astrophysics and High Energy physics.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Experience -->
+                    <div class="tab-content" id="experience">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <span class="date">Feb 2022 - Mar 2022 </span>
+                                <h5>
+                                    React Development Cross - Skilling Nanodegree,
+                                    <i>Udacity</i>
+                                </h5>
+                                <p class="about-p">
+                                    Skills included: JavaScript - React - Redux - Webpack -
+                                    Agile.
+                                </p>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="date">Jul 2021 - Aug 2021 </span>
+                                <h5>
+                                    Advanced Front End Web Developer Nanodegree, <i>Udacity</i>
+                                </h5>
+                                <p class="about-p">
+                                    Designed & implemented web applications using JavaScript
+                                    libraries like React.
+                                </p>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="date">May 2021 - Jun 2021 </span>
+                                <h5>
+                                    Professional Front End Web Developer Nanodegree,
+                                    <i>Udacity</i>
+                                </h5>
+                                <p class="about-p">
+                                    Implemented HTML5, CSS3, JS and Node.js in creating
+                                    responsive web apps.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="center-btns">
+                        <a href="./cv.pdf" class="btn" target="_blank"> View CV </a>
+                        <a href="#contact" class="btn link-item">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <h2>Recent Work</h2>
+            <div id="portfolio">
+                <!-- portfolio item 1 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-item-thumb">
+                        <img src="./images/weather.png" class="portfolio-thumb" alt="portfolio-item-thumb" />
+                    </div>
+
+                    <h3 class="portfolio-item-title">Project Title</h3>
+                    <!-- <button type="button" class="btn p-btn" data-modal="game">View Details</button> -->
+                    <button class="btn portfolio-btn">View Details</button>
+                    <!-- Modal -->
+                    <!-- Modal -->
+                    <div id="game" class="modal">
+
+                        <div class="modal-content" id="game-content">
+                            <h3 class="portfolio-content-title">Would you rather game App</h3>
+                            <p>This is a web app bootstrapped with Create React App and built
+                                with React and Redux where the user can play the would you
+                                rather game. The game is about answering questions with 2
+                                options to choose from.
+                            </p>
+                            <p><strong>Technologies used - </strong>React, Redux, React-Router, Redux-Thunk,
+                                ReactBootstrap.
+                            </p>
+                            <p><strong>View Online - </strong><a
+                                    href="https://github.com/DonyaElbanna/wouldYouRatherApp" target="_blank">Github
+                                    Repo</a></p>
+                        </div>
+                    </div>
+                    <!-- <div class="portfolio-item-details">
+                        <div class="description">
+                            This project uses Webpack as the build tool, express to run
+                            the server, and the Sentiment Analysis API to analyze articles
+                            or blogs throught NLP.
+                        </div>
+                        <div class="description">
+                            <strong>Technologies used - </strong>HTML, SCSS, JavaScript, Node, Express, Webpack 5,
+                            Meaningcloud API, Jest, Workbox
+                        </div>
+                        <div class="description">
+                            <strong>View Online - </strong><a
+                                href="https://github.com/DonyaElbanna/Evaluating-articles-with-NLP"
+                                target="_blank">Github Repo</a>
+                        </div>
+                    </div> -->
+                </div>
+                <!-- portfolio item 2 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-item-thumb">
+                        <img src="./images/weather.png" class="portfolio-thumb" alt="portfolio-item-thumb" />
+                    </div>
+
+                    <h3 class="portfolio-item-title">Project Title</h3>
+
+                    <!-- <button type="button" class="btn p-btn" data-modal="game">View Details</button> -->
+                    <button class="btn portfolio-btn">View Details</button>
+                    <!-- Modal -->
+                    <div id="game" class="modal">
+
+                        <div class="modal-content" id="game-content">
+                            <h3 class="portfolio-content-title">Would you rather game App</h3>
+                            <p>This is a web app bootstrapped with Create React App and built
+                                with React and Redux where the user can play the would you
+                                rather game. The game is about answering questions with 2
+                                options to choose from.
+                            </p>
+                            <p><strong>Technologies used - </strong>React, Redux, React-Router, Redux-Thunk,
+                                ReactBootstrap.
+                            </p>
+                            <p><strong>View Online - </strong><a
+                                    href="https://github.com/DonyaElbanna/wouldYouRatherApp" target="_blank">Github
+                                    Repo</a></p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- portfolio item 3 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-item-thumb">
+                        <img src="./images/game/gameLogin.png" class="portfolio-thumb" alt="portfolio-item-thumb" />
+                    </div>
+
+                    <h3 class="portfolio-item-title">Would you rather game</h3>
+
+                    <!-- <button type="button" class="btn p-btn" data-modal="game">View Details</button> -->
+                    <button class="btn portfolio-btn">View Details</button>
+                    <!-- Modal -->
+                    <div id="game" class="modal">
+
+                        <div class="modal-content" id="game-content">
+                            <h3 class="portfolio-content-title">Would you rather game App</h3>
+                            <p>This is a web app bootstrapped with Create React App and built
+                                with React and Redux where the user can play the would you
+                                rather game. The game is about answering questions with 2
+                                options to choose from.
+                            </p>
+                            <p><strong>Technologies used - </strong>React, Redux, React-Router, Redux-Thunk,
+                                ReactBootstrap.
+                            </p>
+                            <p><strong>View Online - </strong><a
+                                    href="https://github.com/DonyaElbanna/wouldYouRatherApp" target="_blank">Github
+                                    Repo</a></p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- portfolio item 4 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-item-thumb">
+                        <img src="./images/libraryHome.png" class="portfolio-thumb" alt="portfolio-item-thumb" />
+                    </div>
+
+                    <h3 class="portfolio-item-title">Library App</h3>
+
+                    <!-- <button type="button" class="btn p-btn" data-modal="library">View Details</button> -->
+                    <button class="btn portfolio-btn">View Details</button>
+                    <!-- Modal -->
+                    <div id="library" class="modal">
+
+                        <div class="modal-content" id="library-content">
+                            <h3 class="portfolio-content-title">MyReads Library App</h3>
+                            <p>This project uses React to build a library app where the user
+                                can search for books based on title or author from the
+                                provided API and categorize his books into thre shelves
+                                (Currently reading, Want to read and Read).
+                            </p>
+                            <p><strong>Technologies used - </strong>React, React-Router.
+                            </p>
+                            <p><strong>View Online - </strong><a href="https://github.com/DonyaElbanna/MyReads-App"
+                                    target="_blank">Github
+                                    Repo</a></p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- portfolio item 5 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-item-thumb">
+                        <img src="./images/weather.png" class="portfolio-thumb" alt="portfolio-item-thumb" />
+                    </div>
+
+                    <h3 class="portfolio-item-title">Weather App</h3>
+
+                    <!-- <button type="button" class="btn p-btn" data-modal="weather">View Details</button> -->
+                    <button class="btn portfolio-btn">View Details</button>
+                    <!-- Modal -->
+                    <div id="weather" class="modal">
+
+                        <div class="modal-content" id="weather-content">
+                            <h3 class="portfolio-content-title">Weather Journal App - by Zip codes</h3>
+                            <p>An asynchronous web app that uses Web API and user data to
+                                dynamically update the UI.
+                            </p>
+                            <p><strong>Technologies used - </strong>HTML, CSS, JavaScript, Node, Express, Open Weather
+                                Web API
+                            </p>
+                            <p><strong>View Online - </strong><a
+                                    href="https://github.com/DonyaElbanna/Weather-journal-app" target="_blank">Github
+                                    Repo</a></p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- portfolio item 6 -->
+
+                <div class="portfolio-item">
+                    <div class="portfolio-item-thumb">
+                        <img src="./images/NLP/articleResult.png" class="portfolio-thumb" alt="portfolio-item-thumb" />
+                    </div>
+                    <h3 class="portfolio-item-title">NLP Project</h3>
+                    <!-- <button type="button" class="btn p-btn" data-modal="nlp">View Details</button> -->
+                    <button class="btn portfolio-btn">View Details</button>
+                    <!-- Modal -->
+                    <div id="nlp" class="modal">
+
+                        <div class="modal-content" id="nlp-content">
+                            <h3 class="portfolio-content-title">Evaluating articles with NLP</h3>
+                            <p>This project uses Webpack as the build tool, express to run
+                                the server, and the Sentiment Analysis API to analyze articles
+                                or blogs throught NLP.
+                            </p>
+                            <p><strong>Technologies used - </strong>HTML, SCSS, JavaScript, Node, Express, Webpack 5,
+                                Meaningcloud API, Jest, Workbox.
+                            </p>
+                            <p><strong>View Online - </strong><a
+                                    href="https://github.com/DonyaElbanna/Evaluating-articles-with-NLP"
+                                    target="_blank">Github
+                                    Repo</a></p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- portfolio item 7 -->
+
+                <div class="portfolio-item">
+                    <div class="portfolio-item-thumb">
+                        <img src="./images/weather.png" class="portfolio-thumb" alt="portfolio-item-thumb" />
+                    </div>
+
+                    <h3 class="portfolio-item-title">Project Title</h3>
+
+                    <!-- <button type="button" class="btn p-btn" data-modal="game">View Details</button> -->
+                    <button class="btn portfolio-btn">View Details</button>
+                    <!-- Modal -->
+                    <div id="game" class="modal">
+
+                        <div class="modal-content" id="game-content">
+                            <h3 class="portfolio-content-title">Would you rather game App</h3>
+                            <p>This is a web app bootstrapped with Create React App and built
+                                with React and Redux where the user can play the would you
+                                rather game. The game is about answering questions with 2
+                                options to choose from.
+                            </p>
+                            <p><strong>Technologies used - </strong>React, Redux, React-Router, Redux-Thunk,
+                                ReactBootstrap.
+                            </p>
+                            <p><strong>View Online - </strong><a
+                                    href="https://github.com/DonyaElbanna/wouldYouRatherApp" target="_blank">Github
+                                    Repo</a></p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- portfolio item 8 -->
+
+                <div class="portfolio-item">
+                    <div class="portfolio-item-thumb">
+                        <img src="./images/weather.png" class="portfolio-thumb" alt="portfolio-item-thumb" />
+                    </div>
+
+                    <h3 class="portfolio-item-title">Project Title</h3>
+
+                    <!-- <button type="button" class="btn p-btn" data-modal="game">View Details</button> -->
+                    <button class="btn portfolio-btn">View Details</button>
+                    <!-- Modal -->
+                    <div id="game" class="modal">
+
+                        <div class="modal-content" id="game-content">
+                            <h3 class="portfolio-content-title">Would you rather game App</h3>
+                            <p>This is a web app bootstrapped with Create React App and built
+                                with React and Redux where the user can play the would you
+                                rather game. The game is about answering questions with 2
+                                options to choose from.
+                            </p>
+                            <p><strong>Technologies used - </strong>React, Redux, React-Router, Redux-Thunk,
+                                ReactBootstrap.
+                            </p>
+                            <p><strong>View Online - </strong><a
+                                    href="https://github.com/DonyaElbanna/wouldYouRatherApp" target="_blank">Github
+                                    Repo</a></p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- portfolio item 9 -->
+
+                <div class="portfolio-item">
+                    <div class="portfolio-item-thumb">
+                        <img src="./images/weather.png" class="portfolio-thumb" alt="portfolio-item-thumb" />
+                    </div>
+
+                    <h3 class="portfolio-item-title">Project Title</h3>
+
+                    <!-- <button type="button" class="btn p-btn" data-modal="game">View Details</button> -->
+                    <button class="btn portfolio-btn">View Details</button>
+                    <!-- Modal -->
+                    <div id="game" class="modal">
+
+                        <div class="modal-content" id="game-content">
+                            <h3 class="portfolio-content-title">Would you rather game App</h3>
+                            <p>This is a web app bootstrapped with Create React App and built
+                                with React and Redux where the user can play the would you
+                                rather game. The game is about answering questions with 2
+                                options to choose from.
+                            </p>
+                            <p><strong>Technologies used - </strong>React, Redux, React-Router, Redux-Thunk,
+                                ReactBootstrap.
+                            </p>
+                            <p><strong>View Online - </strong><a
+                                    href="https://github.com/DonyaElbanna/wouldYouRatherApp" target="_blank">Github
+                                    Repo</a></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Modal popup -->
+        <div class="portfolio-popup">
+            <div class="pp-inner">
+                <div class="pp-content">
+                    <div class="pp-header">
+                        <button class="pp-close">
+                            &times;
+                        </button>
+                        <h3></h3>
+                        <div class="pp-thumbnail">
+                            <img src="" alt="details thumb" />
+                        </div>
+                    </div>
+                    <div class="pp-body"></div>
+                </div>
+            </div>
+        </div>
+        <section class="section">
+            <h2>Get in Touch</h2>
+            <div id="contact">
+                <div class="contact-form">
+                    <form action="mailto:donyaelbanna@yahoo.com" method="post" enctype="text/plain">
+                        <input type="text" placeholder="Email" class="input" required>
+                        <input type="text" placeholder="Subject" class="input" required />
+                        <textarea placeholder="Message" required class="input"></textarea>
+                        <button type='submit' class="btn submit">Send Email</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <h3>Email:</h3>
+                        <p>donyaelbanna@yahoo.com</p>
+                        <p>s-donya.elbanna@zewailcity.edu.eg</p>
+                    </div>
+                    <div class="contact-info-item">
+                        <h3>Phone</h3>
+                        <p>02 - 01200 634 885</p>
+                    </div>
+                    <div class="contact-info-item">
+                        <h3>Check my work on</h3>
+                        <div class="c-icons">
+                            <a href="https://www.linkedin.com/in/donya-elbanna/" target="_blank"
+                                aria-label="linkedin-icon-link"><img
+                                    src="https://img.icons8.com/ios-filled/500/null/linkedin.png" alt="linkedin-icon"
+                                    class="c-icon" />
+                            </a>
+                            <a href="https://codepen.io/donyaelbanna" target="_blank"
+                                aria-label="codepen-icon-link"><img
+                                    src="https://img.icons8.com/ios-filled/500/null/codepen.png" alt="codepen-icon"
+                                    class="c-icon" />
+                            </a>
+                            <a href="https://github.com/DonyaElbanna" target="_blank" aria-label="github-icon-link">
+                                <img src="https://img.icons8.com/ios-filled/500/null/github.png" alt="github-icon"
+                                    class="c-icon" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+    <div class="footer">
+        <footer>Made By Donya - 2021</footer>
+    </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
