@@ -2,16 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" type="text/html" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Orbitron&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="./style.css" type="text/css" />
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="icon" href="./icons/icon.png" type="image/x-icon">
+    <title>Portfolio</title>
 </head>
 
 <body>
@@ -38,9 +36,9 @@
         <!-- Home -->
         <section class="section">
             <div id="home">
-                <p>Hi! I'm</p>
+                <p class="b-name">Hi! I'm</p>
                 <h1><strong id="name">Donya</strong></h1>
-                <p>Front-end Web Developer</p>
+                <p class="a-name">Front-end Web Developer</p>
                 <p>
                     HTML5 - CSS3 - JavaScript - ES6 - React - React&Redux - Bootstrap -
                     Webpack - Git
@@ -48,14 +46,14 @@
                 <div class="icons">
                     <a href="https://www.linkedin.com/in/donya-elbanna/" target="_blank"
                         aria-label="linkedin-icon-link"><img class="icon" src="./icons/linkedin.png"
-                            alt="linkedin-icon" />
+                            alt="linkedin-icon">
                     </a>
                     <a href="https://codepen.io/donyaelbanna" target="_blank" class="icon"
-                        aria-label="codepen-icon-link"><img class="icon" src="./icons/codepen.png" alt="codepen-icon" />
+                        aria-label="codepen-icon-link"><img class="icon" src="./icons/codepen.png" alt="codepen-icon">
                     </a>
                     <a href="https://github.com/DonyaElbanna" target="_blank" class="icon"
                         aria-label="github-icon-link">
-                        <img class="icon" src="./icons/github.png" alt="github-icon" />
+                        <img class="icon" src="./icons/github.png" alt="github-icon">
                     </a>
                 </div>
                 <div class="center-btns">
@@ -161,7 +159,7 @@
                         </div>
                     </div>
                     <div class="center-btns">
-                        <a href="./cv.pdf" class="btn" target="_blank"> View CV </a>
+                        <a href="./docs/cv.pdf" class="btn" target="_blank"> View CV </a>
                         <a href="#contact" class="btn link-item">Contact Me</a>
                     </div>
                 </div>
@@ -174,198 +172,244 @@
                 <!-- portfolio item 1 -->
                 <div class="portfolio-item">
                     <div class="portfolio-item-thumb">
-                        <img src="./images/timer/timer-light.PNG" class="portfolio-thumb" alt="portfolio-item-thumb" />
+                        <img src="./images/timer/timer-light.PNG" class="portfolio-thumb" alt="portfolio-item-thumb">
                     </div>
-
                     <h3 class="portfolio-item-title">Pomodoro Timer</h3>
-                    <!-- <button type="button" class="btn p-btn" data-modal="game">View Details</button> -->
-                    <button class="btn portfolio-btn">View Details</button>
+                    <button type="button" class="btn portfolio-btn">
+                        View Details
+                    </button>
                     <!-- Modal -->
-                    <div id="game" class="modal">
-
-                        <div class="modal-content" id="game-content">
+                    <div class="modal">
+                        <div class="modal-content">
                             <h3 class="portfolio-content-title">Pomodoro Timer</h3>
                             <!-- Slideshow container -->
                             <div class="slider">
-                                <img class="slide" src="./images/timer/timer-light.PNG">
-                                <img class="slide" src="./images/timer/timer-dark.PNG">
-                                <div class="slider-btns">
-                                    <button class="prev" onclick="nextSlide(-1)">&#10094;</button>
-                                    <button class="next" onclick="nextSlide(1)">&#10095;</button>
-                                </div>
+                                <button type="button" class="prev" onclick="nextSlide(-1)">
+                                    &#10094;
+                                </button>
+                                <img class="slide" src="./images/timer/timer-light.PNG" alt="portfolio-item-slide">
+                                <img class="slide" src="./images/timer/timer-dark.PNG" alt="portfolio-item-slide">
+                                <button type="button" class="next" onclick="nextSlide(1)">
+                                    &#10095;
+                                </button>
                             </div>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate quis ipsa recusandae,
-                                sed eum aspernatur hic animi molestiae cupiditate at laborum omnis culpa beatae quidem
-                                aperiam quasi minima? Possimus, nihil.
-                            </p>
-                            <p><strong class="accent">Technologies used - </strong>Lorem ipsum dolor sit amet
-                                consectetur, adipisicing elit..
-                            </p>
-                            <p><strong>View Online - </strong><a class="p-link"
-                                    href="https://github.com/DonyaElbanna/wouldYouRatherApp" target="_blank">Github
-                                    Repo</a></p>
-                            <!-- <div class="center-btns"> -->
-                            <button class="demo"><a href="https://donyaelbanna.github.io/React-Pomodoro/"
-                                    target="_blank">Live
-                                    Demo</a></button>
-                            <!-- </div> -->
-
+                            <div class="p-text">
+                                <p class="pp-text">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Voluptate quis ipsa recusandae, sed eum aspernatur hic animi
+                                    molestiae cupiditate at laborum omnis culpa beatae quidem
+                                    aperiam quasi minima? Possimus, nihil.
+                                </p>
+                                <p class="pp-text">
+                                    <strong class="accent">Technologies used - </strong>Lorem
+                                    ipsum dolor sit amet consectetur, adipisicing elit..
+                                </p>
+                                <p class="pp-text">
+                                    <strong>View Online - </strong><a class="p-link"
+                                        href="https://github.com/DonyaElbanna/wouldYouRatherApp" target="_blank">Github
+                                        Repo</a>
+                                </p>
+                            </div>
+                            <div class="center-btns">
+                                <span class="demo">
+                                    <a href="https://donyaelbanna.github.io/React-Pomodoro/" target="_blank">
+                                        Live Demo
+                                    </a>
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <!-- portfolio item 2 -->
                 <div class="portfolio-item">
                     <div class="portfolio-item-thumb">
-                        <img src="./images/drum/drum-on.PNG" class="portfolio-thumb" alt="portfolio-item-thumb" />
+                        <img src="./images/drum/drum-on.PNG" class="portfolio-thumb" alt="portfolio-item-thumb">
                     </div>
-
                     <h3 class="portfolio-item-title">Drum Machine</h3>
-                    <!-- <button type="button" class="btn p-btn" data-modal="game">View Details</button> -->
-                    <button class="btn portfolio-btn">View Details</button>
+                    <button type="button" class="btn portfolio-btn">
+                        View Details
+                    </button>
                     <!-- Modal -->
-                    <div id="game" class="modal">
-
-                        <div class="modal-content" id="game-content">
+                    <div class="modal">
+                        <div class="modal-content">
                             <h3 class="portfolio-content-title">Drum Machine</h3>
                             <!-- Slideshow container -->
                             <div class="slider">
-                                <img class="slide" src="./images/drum/drum-on.PNG">
-                                <img class="slide" src="./images/drum/drum-off.PNG">
-                                <div class="slider-btns">
-                                    <button class="prev" onclick="nextSlide(-1)">&#10094;</button>
-                                    <button class="next" onclick="nextSlide(1)">&#10095;</button>
-                                </div>
+                                <button type="button" class="prev" onclick="nextSlide(-1)">
+                                    &#10094;
+                                </button>
+                                <img class="slide" src="./images/drum/drum-on.PNG" alt="portfolio-item-slide">
+                                <img class="slide" src="./images/drum/drum-off.PNG" alt="portfolio-item-slide">
+                                <button type="button" class="next" onclick="nextSlide(1)">
+                                    &#10095;
+                                </button>
                             </div>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate quis ipsa recusandae,
-                                sed eum aspernatur hic animi molestiae cupiditate at laborum omnis culpa beatae quidem
-                                aperiam quasi minima? Possimus, nihil.
-                            </p>
-                            <p><strong class="accent">Technologies used - </strong>Lorem ipsum dolor sit amet
-                                consectetur, adipisicing elit..
-                            </p>
-                            <p><strong>View Online - </strong><a class="p-link"
-                                    href="https://github.com/DonyaElbanna/wouldYouRatherApp" target="_blank">Github
-                                    Repo</a></p>
+                            <div class="p-text">
+                                <p class="pp-text">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Voluptate quis ipsa recusandae, sed eum aspernatur hic animi
+                                    molestiae cupiditate at laborum omnis culpa beatae quidem
+                                    aperiam quasi minima? Possimus, nihil.
+                                </p>
+                                <p class="pp-text">
+                                    <strong class="accent">Technologies used - </strong>Lorem
+                                    ipsum dolor sit amet consectetur, adipisicing elit..
+                                </p>
+                                <p class="pp-text">
+                                    <strong>View Online - </strong>
+                                    <a class="p-link" href="https://github.com/DonyaElbanna/wouldYouRatherApp"
+                                        target="_blank">
+                                        Github Repo
+                                    </a>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <!-- portfolio item 3 -->
                 <div class="portfolio-item">
                     <div class="portfolio-item-thumb">
-                        <img src="./images/game/gameLogin.png" class="portfolio-thumb" alt="portfolio-item-thumb" />
+                        <img src="./images/game/gameLogin.png" class="portfolio-thumb" alt="portfolio-item-thumb">
                     </div>
 
                     <h3 class="portfolio-item-title">Would you Rather</h3>
-                    <!-- <button type="button" class="btn p-btn" data-modal="game">View Details</button> -->
-                    <button class="btn portfolio-btn">View Details</button>
+                    <button type="button" class="btn portfolio-btn">
+                        View Details
+                    </button>
                     <!-- Modal -->
-                    <div id="game" class="modal">
-
-                        <div class="modal-content" id="game-content">
-                            <h3 class="portfolio-content-title">Would you Rather Game App</h3>
+                    <div class="modal">
+                        <div class="modal-content">
+                            <h3 class="portfolio-content-title">
+                                Would you Rather Game App
+                            </h3>
                             <!-- Slideshow container -->
                             <div class="slider">
-                                <img class="slide" src="./images/game/gameLogin.png">
-                                <img class="slide" src="./images/game/gameAdd.png">
-                                <img class="slide" src="./images/game/gameVote.png">
-                                <img class="slide" src="./images/game/gameAn.png">
-                                <img class="slide" src="./images/game/gamePoll.png">
-                                <img class="slide" src="./images/game/gameLead.png">
-                                <img class="slide" src="./images/game/gameLeadDets.png">
-                                <div class="slider-btns">
-                                    <button class="prev" onclick="nextSlide(-1)">&#10094;</button>
-                                    <button class="next" onclick="nextSlide(1)">&#10095;</button>
-                                </div>
+                                <button type="button" class="prev" onclick="nextSlide(-1)">
+                                    &#10094;
+                                </button>
+
+                                <img class="slide" src="./images/game/gameLogin.png" alt="portfolio-item-slide">
+                                <img class="slide" src="./images/game/gameAdd.png" alt="portfolio-item-slide">
+                                <img class="slide" src="./images/game/gameVote.png" alt="portfolio-item-slide">
+                                <img class="slide" src="./images/game/gameAn.png" alt="portfolio-item-slide">
+                                <img class="slide" src="./images/game/gamePoll.png" alt="portfolio-item-slide">
+                                <img class="slide" src="./images/game/gameLead.png" alt="portfolio-item-slide">
+                                <img class="slide" src="./images/game/gameLeadDets.png" alt="portfolio-item-slide">
+                                <button type="button" class="next" onclick="nextSlide(1)">
+                                    &#10095;
+                                </button>
                             </div>
-                            <p>This is a web app bootstrapped with Create React App and built
-                                with React and Redux where the user can play the would you
-                                rather game. The game is about answering questions with 2
-                                options to choose from.
-                            </p>
-                            <p><strong class="accent">Technologies used - </strong>React, Redux, React-Router,
-                                Redux-Thunk,
-                                ReactBootstrap.
-                            </p>
-                            <p><strong>View Online - </strong><a class="p-link"
-                                    href="https://github.com/DonyaElbanna/wouldYouRatherApp" target="_blank">Github
-                                    Repo</a></p>
+                            <div class="p-text">
+                                <p class="pp-text">
+                                    This is a web app bootstrapped with Create React App and
+                                    built with React and Redux where the user can play the would
+                                    you rather game. The game is about answering questions with
+                                    2 options to choose from.
+                                </p>
+                                <p class="pp-text">
+                                    <strong class="accent">Technologies used - </strong>React,
+                                    Redux, React-Router, Redux-Thunk, ReactBootstrap.
+                                </p>
+                                <p class="pp-text">
+                                    <strong>View Online - </strong><a class="p-link"
+                                        href="https://github.com/DonyaElbanna/wouldYouRatherApp" target="_blank">Github
+                                        Repo</a>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <!-- portfolio item 4 -->
                 <div class="portfolio-item">
                     <div class="portfolio-item-thumb">
-                        <img src="./images/library/libraryHome.png" class="portfolio-thumb"
-                            alt="portfolio-item-thumb" />
+                        <img src="./images/library/libraryHome.png" class="portfolio-thumb" alt="portfolio-item-thumb">
                     </div>
 
                     <h3 class="portfolio-item-title">Library App</h3>
-                    <!-- <button type="button" class="btn p-btn" data-modal="game">View Details</button> -->
-                    <button class="btn portfolio-btn">View Details</button>
+                    <button type="button" class="btn portfolio-btn">
+                        View Details
+                    </button>
                     <!-- Modal -->
-                    <div id="game" class="modal">
-
-                        <div class="modal-content" id="game-content">
+                    <div class="modal">
+                        <div class="modal-content">
                             <h3 class="portfolio-content-title">My Reads Library App</h3>
                             <!-- Slideshow container -->
                             <div class="slider">
-                                <img class="slide" src="./images//library/libraryHome.png">
-                                <img class="slide" src="./images/library/librarySearch.png">
-                                <div class="slider-btns">
-                                    <button class="prev" onclick="nextSlide(-1)">&#10094;</button>
-                                    <button class="next" onclick="nextSlide(1)">&#10095;</button>
-                                </div>
+                                <button type="button" class="prev" onclick="nextSlide(-1)">
+                                    &#10094;
+                                </button>
+
+                                <img class="slide" src="./images//library/libraryHome.png" alt="portfolio-item-slide">
+                                <img class="slide" src="./images/library/librarySearch.png" alt="portfolio-item-slide">
+                                <button type="button" class="next" onclick="nextSlide(1)">
+                                    &#10095;
+                                </button>
                             </div>
-                            <p>This project uses React to build a library app where the user
-                                can search for books based on title or author from the
-                                provided API and categorize his books into thre shelves
-                                (Currently reading, Want to read and Read).
-                            </p>
-                            <p><strong class="accent">Technologies used - </strong>React, React-Router.
-                            </p>
-                            <p><strong>View Online - </strong><a class="p-link"
-                                    href="https://github.com/DonyaElbanna/MyReads-App" target="_blank">Github
-                                    Repo</a></p>
+                            <div class="p-text">
+                                <p class="pp-text">
+                                    This project uses React to build a library app where the
+                                    user can search for books based on title or author from the
+                                    provided API and categorize his books into thre shelves
+                                    (Currently reading, Want to read and Read).
+                                </p>
+                                <p class="pp-text">
+                                    <strong class="accent">Technologies used - </strong>React,
+                                    React-Router.
+                                </p>
+                                <p class="pp-text">
+                                    <strong>View Online - </strong><a class="p-link"
+                                        href="https://github.com/DonyaElbanna/MyReads-App" target="_blank">Github
+                                        Repo</a>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <!-- portfolio item 5 -->
                 <div class="portfolio-item">
                     <div class="portfolio-item-thumb">
-                        <img src="./images/forecast/forecast.PNG" class="portfolio-thumb" alt="portfolio-item-thumb" />
+                        <img src="./images/forecast/forecast.PNG" class="portfolio-thumb" alt="portfolio-item-thumb">
                     </div>
 
                     <h3 class="portfolio-item-title">Forecast App</h3>
-                    <!-- <button type="button" class="btn p-btn" data-modal="game">View Details</button> -->
-                    <button class="btn portfolio-btn">View Details</button>
+                    <button type="button" class="btn portfolio-btn">
+                        View Details
+                    </button>
                     <!-- Modal -->
-                    <div id="game" class="modal">
-
-                        <div class="modal-content" id="game-content">
+                    <div class="modal">
+                        <div class="modal-content">
                             <h3 class="portfolio-content-title">Weather Forecast App</h3>
                             <!-- Slideshow container -->
                             <div class="slider">
-                                <img class="slide" src="./images/forecast/forecast.PNG">
-                                <img class="slide" src="./images/forecast/forecast-details.PNG">
-                                <img class="slide" src="./images/forecast/forecast-week.PNG">
-                                <div class="slider-btns">
-                                    <button class="prev" onclick="nextSlide(-1)">&#10094;</button>
-                                    <button class="next" onclick="nextSlide(1)">&#10095;</button>
-                                </div>
+                                <button type="button" class="prev" onclick="nextSlide(-1)">
+                                    &#10094;
+                                </button>
+
+                                <img class="slide" src="./images/forecast/forecast.PNG" alt="portfolio-item-slide">
+                                <img class="slide" src="./images/forecast/forecast-details.PNG"
+                                    alt="portfolio-item-slide">
+                                <img class="slide" src="./images/forecast/forecast-week.PNG" alt="portfolio-item-slide">
+                                <button type="button" class="next" onclick="nextSlide(1)">
+                                    &#10095;
+                                </button>
                             </div>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate quis ipsa recusandae,
-                                sed eum aspernatur hic animi molestiae cupiditate at laborum omnis culpa beatae quidem
-                                aperiam quasi minima? Possimus, nihil.
-                            </p>
-                            <p><strong class="accent">Technologies used - </strong>Lorem ipsum dolor sit amet
-                                consectetur, adipisicing elit..
-                            </p>
-                            <p><strong>View Online - </strong><a class="p-link"
-                                    href="https://github.com/DonyaElbanna/wouldYouRatherApp" target="_blank">Github
-                                    Repo</a></p>
-                            <button class="btn portfolio-btn"><a href="https://donyaelbanna.github.io/React-Pomodoro/"
-                                    target="_blank">Live
-                                    Demo</a></button>
+                            <div class="p-text">
+                                <p class="pp-text">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Voluptate quis ipsa recusandae, sed eum aspernatur hic animi
+                                    molestiae cupiditate at laborum omnis culpa beatae quidem
+                                    aperiam quasi minima? Possimus, nihil.
+                                </p>
+                                <p class="pp-text">
+                                    <strong class="accent">Technologies used - </strong>Lorem
+                                    ipsum dolor sit amet consectetur, adipisicing elit..
+                                </p>
+                                <p class="pp-text">
+                                    <strong>View Online - </strong><a class="p-link"
+                                        href="https://github.com/DonyaElbanna/wouldYouRatherApp" target="_blank">Github
+                                        Repo</a>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -373,40 +417,51 @@
 
                 <div class="portfolio-item">
                     <div class="portfolio-item-thumb">
-                        <img src="./images/NLP/articleResult.png" class="portfolio-thumb" alt="portfolio-item-thumb" />
+                        <img src="./images/NLP/articleResult.png" class="portfolio-thumb" alt="portfolio-item-thumb">
                     </div>
 
                     <h3 class="portfolio-item-title">NLP Webpack</h3>
-                    <!-- <button type="button" class="btn p-btn" data-modal="game">View Details</button> -->
-                    <button class="btn portfolio-btn">View Details</button>
+                    <button type="button" class="btn portfolio-btn">
+                        View Details
+                    </button>
                     <!-- Modal -->
-                    <div id="game" class="modal">
-
-                        <div class="modal-content" id="game-content">
-                            <h3 class="portfolio-content-title">Evaluating Articles with NLP</h3>
+                    <div class="modal">
+                        <div class="modal-content">
+                            <h3 class="portfolio-content-title">
+                                Evaluating Articles with NLP
+                            </h3>
                             <!-- Slideshow container -->
                             <div class="slider">
-                                <img class="slide" src="./images/NLP/articleHome.png">
-                                <img class="slide" src="./images/NLP/articleEval.png">
-                                <img class="slide" src="./images/NLP/articleResult.png">
-                                <img class="slide" src="./images/NLP/articleInvURL.png">
-                                <img class="slide" src="./images/NLP/articleError.png">
-                                <div class="slider-btns">
-                                    <button class="prev" onclick="nextSlide(-1)">&#10094;</button>
-                                    <button class="next" onclick="nextSlide(1)">&#10095;</button>
-                                </div>
+                                <button type="button" class="prev" onclick="nextSlide(-1)">
+                                    &#10094;
+                                </button>
+
+                                <img class="slide" src="./images/NLP/articleHome.png" alt="portfolio-item-slide">
+                                <img class="slide" src="./images/NLP/articleEval.png" alt="portfolio-item-slide">
+                                <img class="slide" src="./images/NLP/articleResult.png" alt="portfolio-item-slide">
+                                <img class="slide" src="./images/NLP/articleInvURL.png" alt="portfolio-item-slide">
+                                <img class="slide" src="./images/NLP/articleError.png" alt="portfolio-item-slide">
+                                <button type="button" class="next" onclick="nextSlide(1)">
+                                    &#10095;
+                                </button>
                             </div>
-                            <p>This project uses Webpack as the build tool, express to run
-                                the server, and the Sentiment Analysis API to analyze articles
-                                or blogs throught NLP.
-                            </p>
-                            <p><strong class="accent">Technologies used - </strong> Webpack 5, HTML, SCSS, JavaScript,
-                                Node, Express, Meaningcloud API, Jest, Workbox.
-                            </p>
-                            <p><strong>View Online - </strong><a class="p-link"
-                                    href="https://github.com/DonyaElbanna/Evaluating-articles-with-NLP"
-                                    target="_blank">Github
-                                    Repo</a></p>
+                            <div class="p-text">
+                                <p class="pp-text">
+                                    This project uses Webpack as the build tool, express to run
+                                    the server, and the Sentiment Analysis API to analyze
+                                    articles or blogs throught NLP.
+                                </p>
+                                <p class="pp-text">
+                                    <strong class="accent">Technologies used - </strong> Webpack
+                                    5, HTML, SCSS, JavaScript, Node, Express, Meaningcloud API,
+                                    Jest, Workbox.
+                                </p>
+                                <p class="pp-text">
+                                    <strong>View Online - </strong><a class="p-link"
+                                        href="https://github.com/DonyaElbanna/Evaluating-articles-with-NLP"
+                                        target="_blank">Github Repo</a>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -414,94 +469,118 @@
 
                 <div class="portfolio-item">
                     <div class="portfolio-item-thumb">
-                        <img src="./images/weather.png" class="portfolio-thumb" alt="portfolio-item-thumb" />
+                        <img src="./images/weather.png" class="portfolio-thumb" alt="portfolio-item-thumb">
                     </div>
 
                     <h3 class="portfolio-item-title">Weather Journal</h3>
-                    <!-- <button type="button" class="btn p-btn" data-modal="game">View Details</button> -->
-                    <button class="btn portfolio-btn">View Details</button>
+                    <button type="button" class="btn portfolio-btn">
+                        View Details
+                    </button>
                     <!-- Modal -->
-                    <div id="game" class="modal">
-
-                        <div class="modal-content" id="game-content">
-                            <h3 class="portfolio-content-title">Weather Journal App by Zip Codes</h3>
-                            <!-- Slideshow container -->
-                            <div class="slider">
-                                <img class="slide-modal" src="./images/weather.png">
+                    <div class="modal">
+                        <div class="modal-content">
+                            <h3 class="portfolio-content-title">
+                                Weather Journal App by Zip Codes
+                            </h3>
+                            <div class="modal-content-no-slider">
+                                <!-- Slideshow container -->
+                                <div class="slider">
+                                    <img class="slide-modal" src="./images/weather.png" alt="portfolio-item-slide">
+                                </div>
+                                <div class="p-text-no-slider">
+                                    <p class="pp-text">
+                                        An asynchronous web app that uses Web API and user data to
+                                        dynamically update the UI.
+                                    </p>
+                                    <p class="pp-text">
+                                        <strong class="accent">Technologies used - </strong> HTML,
+                                        CSS, JavaScript, Node, Express, Web API
+                                    </p>
+                                    <p class="pp-text">
+                                        <strong>View Online - </strong><a class="p-link"
+                                            href="https://github.com/DonyaElbanna/Weather-journal-app"
+                                            target="_blank">Github Repo</a>
+                                    </p>
+                                </div>
                             </div>
-                            <p>An asynchronous web app that uses Web API and user data to
-                                dynamically update the UI.
-                            </p>
-                            <p><strong class="accent">Technologies used - </strong> HTML, CSS, JavaScript, Node,
-                                Express, Web API
-                            </p>
-                            <p><strong>View Online - </strong><a class="p-link"
-                                    href="https://github.com/DonyaElbanna/Weather-journal-app" target="_blank">Github
-                                    Repo</a></p>
                         </div>
                     </div>
                 </div>
                 <!-- portfolio item 8 -->
-
                 <div class="portfolio-item">
                     <div class="portfolio-item-thumb">
-                        <img src="./images/calculator.PNG" class="portfolio-thumb" alt="portfolio-item-thumb" />
+                        <img src="./images/calculator.PNG" class="portfolio-thumb" alt="portfolio-item-thumb">
                     </div>
-
                     <h3 class="portfolio-item-title">React Calculator</h3>
-
-                    <!-- <button type="button" class="btn p-btn" data-modal="game">View Details</button> -->
-                    <button class="btn portfolio-btn">View Details</button>
+                    <button type="button" class="btn portfolio-btn">
+                        View Details
+                    </button>
                     <!-- Modal -->
-                    <div id="game" class="modal">
-
-                        <div class="modal-content" id="game-content">
+                    <div class="modal">
+                        <div class="modal-content">
                             <h3 class="portfolio-content-title">React Calculator App</h3>
                             <!-- Slideshow container -->
-                            <div class="slider">
-                                <img class="slide-modal" src="./images/calculator.PNG">
+                            <div class="modal-content-no-slider">
+                                <div class="slider">
+                                    <img class="slide-modal" src="./images/calculator.PNG" alt="portfolio-item-slide">
+                                </div>
+                                <div class="p-text-no-slider">
+                                    <p class="pp-text">
+                                        This is a web app bootstrapped with Create React App and
+                                        built with React and Redux where the user can play the
+                                        would you rather game. The game is about answering
+                                        questions with 2 options to choose from.
+                                    </p>
+                                    <p class="pp-text">
+                                        <strong class="accent">Technologies used - </strong>React.
+                                    </p>
+                                    <p class="pp-text">
+                                        <strong>View Online - </strong><a class="p-link"
+                                            href="https://github.com/DonyaElbanna/React-Calculator"
+                                            target="_blank">Github Repo</a>
+                                    </p>
+                                </div>
                             </div>
-                            <h3 class="portfolio-content-title">React Calculator App</h3>
-                            <p>This is a web app bootstrapped with Create React App and built
-                                with React and Redux where the user can play the would you
-                                rather game. The game is about answering questions with 2
-                                options to choose from.
-                            </p>
-                            <p><strong class="accent">Technologies used - </strong>React.
-                            </p>
-                            <p><strong>View Online - </strong><a class="p-link"
-                                    href="https://github.com/DonyaElbanna/React-Calculator" target="_blank">Github
-                                    Repo</a></p>
                         </div>
                     </div>
-
                 </div>
                 <!-- portfolio item 9 -->
-
                 <div class="portfolio-item">
                     <div class="portfolio-item-thumb">
-                        <img src="./images/quotes.PNG" class="portfolio-thumb" alt="portfolio-item-thumb" />
+                        <img src="./images/quotes.PNG" class="portfolio-thumb" alt="portfolio-item-thumb">
                     </div>
 
                     <h3 class="portfolio-item-title">Quotes Generator</h3>
-                    <!-- <button type="button" class="btn p-btn" data-modal="game">View Details</button> -->
-                    <button class="btn portfolio-btn">View Details</button>
+                    <button type="button" class="btn portfolio-btn">
+                        View Details
+                    </button>
                     <!-- Modal -->
-                    <div id="game" class="modal">
-
-                        <div class="modal-content" id="game-content">
-                            <h3 class="portfolio-content-title">Quotes Generator App with MirageJS</h3>
+                    <div class="modal">
+                        <div class="modal-content">
+                            <h3 class="portfolio-content-title">
+                                React Quotes App - MirageJS
+                            </h3>
                             <!-- Slideshow container -->
-                            <div class="slider">
-                                <img class="slide-modal" src="./images/quotes.PNG">
+                            <div class="modal-content-no-slider">
+                                <div class="slider">
+                                    <img class="slide-modal" src="./images/quotes.PNG" alt="portfolio-item-slide">
+                                </div>
+                                <div class="p-text-no-slider">
+                                    <p class="pp-text">
+                                        It's a random Quotes Generator with an API created with
+                                        MirageJS.
+                                    </p>
+                                    <p class="pp-text">
+                                        <strong class="accent">Technologies used - </strong>
+                                        React, MirageJS.
+                                    </p>
+                                    <p class="pp-text">
+                                        <strong>View Online - </strong><a class="p-link"
+                                            href="https://github.com/DonyaElbanna/Quotes-MirageJS"
+                                            target="_blank">Github Repo</a>
+                                    </p>
+                                </div>
                             </div>
-                            <p>It's a random Quotes Generator with an API created with MirageJS.
-                            </p>
-                            <p><strong class="accent">Technologies used - </strong> React, MirageJS.
-                            </p>
-                            <p><strong>View Online - </strong><a class="p-link"
-                                    href="https://github.com/DonyaElbanna/Quotes-MirageJS" target="_blank">Github
-                                    Repo</a></p>
                         </div>
                     </div>
                 </div>
@@ -512,13 +591,8 @@
             <div class="pp-inner">
                 <div class="pp-content">
                     <div class="pp-header">
-                        <h3></h3>
-                        <button class="pp-close">
-                            &times;
-                        </button>
-                        <!-- <div class="pp-thumbnail">
-                            <img src="" alt="details thumb" />
-                        </div> -->
+                        <h3 class="pp-heading">&nbsp;</h3>
+                        <button type="button" class="pp-close">&times;</button>
                     </div>
                     <div class="pp-body" id="pp-body"></div>
                 </div>
@@ -531,9 +605,9 @@
                 <div class="contact-form">
                     <form action="mailto:donyaelbanna@yahoo.com" method="post" enctype="text/plain">
                         <input type="text" placeholder="Email" class="input" required>
-                        <input type="text" placeholder="Subject" class="input" required />
+                        <input type="text" placeholder="Subject" class="input" required>
                         <textarea placeholder="Message" required class="input"></textarea>
-                        <button type='submit' class="btn submit">Send Email</button>
+                        <button type="submit" class="btn submit">Send Email</button>
                     </form>
                 </div>
                 <div class="contact-info">
@@ -552,28 +626,27 @@
                             <a href="https://www.linkedin.com/in/donya-elbanna/" target="_blank"
                                 aria-label="linkedin-icon-link"><img
                                     src="https://img.icons8.com/ios-filled/500/null/linkedin.png" alt="linkedin-icon"
-                                    class="c-icon" />
+                                    class="c-icon">
                             </a>
                             <a href="https://codepen.io/donyaelbanna" target="_blank"
                                 aria-label="codepen-icon-link"><img
                                     src="https://img.icons8.com/ios-filled/500/null/codepen.png" alt="codepen-icon"
-                                    class="c-icon" />
+                                    class="c-icon">
                             </a>
                             <a href="https://github.com/DonyaElbanna" target="_blank" aria-label="github-icon-link">
                                 <img src="https://img.icons8.com/ios-filled/500/null/github.png" alt="github-icon"
-                                    class="c-icon" />
+                                    class="c-icon">
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
     </div>
-    </section>
+
     <div class="footer">
         <footer>Made By Donya - 2021</footer>
     </div>
-    </div>
-
 
     <script src="script.js"></script>
 </body>

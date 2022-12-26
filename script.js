@@ -35,8 +35,9 @@ document
   .addEventListener("click", togglePortfolioPopup);
 
 function portfolioItemDetails(portfolioItem) {
-  document.querySelector(".pp-header h3").innerHTML =
-    portfolioItem.querySelector(".portfolio-content-title").innerHTML;
+  document.querySelector(".pp-heading").innerHTML = portfolioItem.querySelector(
+    ".portfolio-content-title"
+  ).innerHTML;
 
   document.querySelector(".pp-body").innerHTML =
     portfolioItem.querySelector(".modal-content").innerHTML;
