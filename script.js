@@ -17,58 +17,24 @@ tabsContainer.addEventListener("click", (e) => {
   }
 });
 
-// portfolio modals
-// let buttons = document.querySelectorAll(".p-btn");
-// let modals = document.querySelectorAll(".modal");
-// let modalsContent = document.querySelectorAll(".modal-content");
-
-// const showModal = (id) => {
-//   let modal = document.getElementById(id);
-//   modal.classList.add("visible");
-// };
-
-// const hideModal = () => {
-//   modals.forEach((modal) => {
-//     modal.classList.remove("visible");
-//   });
-// };
-
-// buttons.forEach((btn) => {
-//   btn.addEventListener("click", (event) => {
-//     hideModal();
-//     showModal(btn.dataset.modal);
-//   });
-// });
-
-// modals.forEach((modal) => {
-//   let close = modal.querySelector(".close");
-//   close.addEventListener("click", hideModal);
-// });
-
 // popupmodal
 document.addEventListener("click", (e) => {
   if (e.target.classList.contains("portfolio-btn")) {
     togglePortfolioPopup();
-    // document.querySelector(".portfolio-popup").scrollTo(0, 0);
     portfolioItemDetails(e.target.parentElement);
     // console.log(e.target.parentElement);
+    showSlides();
   }
 });
 
 function togglePortfolioPopup() {
   document.querySelector(".portfolio-popup").classList.toggle("open");
-  //   document.body.classList.toggle("hide-scrolling");
-  //   document.querySelector(".main").classList.toggle("fade-out");
 }
 document
   .querySelector(".pp-close")
   .addEventListener("click", togglePortfolioPopup);
 
 function portfolioItemDetails(portfolioItem) {
-  document.querySelector(".pp-thumbnail img").src = portfolioItem.querySelector(
-    ".portfolio-item-thumb img"
-  ).src;
-
   document.querySelector(".pp-header h3").innerHTML =
     portfolioItem.querySelector(".portfolio-content-title").innerHTML;
 
@@ -82,6 +48,34 @@ document.addEventListener("click", (e) => {
     togglePortfolioPopup();
   }
 });
+
+// slider
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function nextSlide(n) {
+  showSlides((slideIndex += n));
+}
+
+// function currentSlide(n) {
+//   showSlides((slideIndex = n));
+// }
+
+function showSlides(n) {
+  let slides = document.querySelectorAll("#pp-body .slide");
+
+  slides[1].style.display = "block";
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+    slides[slideIndex - 1].style.display = "block";
+  }
+}
 
 // back to top button
 const backToTopButton = document.querySelector(".arrow");
