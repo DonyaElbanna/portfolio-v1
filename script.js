@@ -57,10 +57,6 @@ function nextSlide(n) {
   showSlides((slideIndex += n));
 }
 
-// function currentSlide(n) {
-//   showSlides((slideIndex = n));
-// }
-
 function showSlides(n) {
   let slides = document.querySelectorAll("#pp-body .slide");
 
@@ -76,31 +72,3 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
   }
 }
-
-// back to top button
-const backToTopButton = document.querySelector(".arrow");
-
-const scrollContainer = () => {
-  return document.documentElement || document.body;
-};
-
-const goToTop = () => {
-  document.body.scrollIntoView({
-    behavior: "smooth",
-  });
-};
-
-document.addEventListener("scroll", () => {
-  const scrolledPercentage =
-    (scrollContainer().scrollTop /
-      (scrollContainer().scrollHeight - scrollContainer().clientHeight)) *
-    100;
-
-  if (scrollContainer().scrollTop > 800) {
-    backToTopButton.classList.remove("hidden");
-  } else {
-    backToTopButton.classList.add("hidden");
-  }
-});
-
-backToTopButton.addEventListener("click", goToTop);

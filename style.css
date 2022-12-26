@@ -104,45 +104,6 @@ a {
   width: 100%;
 }
 
-/* jumping arrow */
-.arrow {
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  position: fixed;
-  bottom: 0;
-  left: 95%;
-  width: 40px;
-  height: 40px;
-  z-index: 100;
-  background-image: url("./icons/arrow.svg");
-  background-size: contain;
-}
-
-.bounce {
-  animation: bounce 2s infinite;
-}
-
-.hidden {
-  opacity: 0%;
-}
-
-@keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
-}
-
 /* About */
 
 h2 {
@@ -450,12 +411,8 @@ ul {
   text-decoration: underline;
   color: var(--main-color);
 }
-/* slider */
 
-/* .slider {
-  position: relative;
-  margin: auto;
-} */
+/* slider */
 
 .slide {
   width: 100%;
@@ -474,41 +431,35 @@ ul {
   display: block;
 }
 
-.slider-btns {
+/* .slider {
   display: flex;
   justify-content: space-between;
-  position: absolute;
-  top: 50%;
+ 
 }
 
-/* 
-.prev,
-.next {
+.next,
+.prev {
+  border: none;
+  background-color: transparent;
   cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: blueviolet;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+  color: var(--main-color);
 }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+.prev:hover,
+.next:hover {
+  color: var(--pink-light);
+} */
+
+.demo {
+  border-radius: 10px;
+  background-color: var(--pink-light);
+  color: var(--white);
+  border: 1px solid var(--main-color);
 }
 
-#prev:hover,
-#next:hover {
-  background-color: rgba(163, 34, 34, 0.8);
+.demo:hover {
+  background-color: var(--main-color);
 }
-*/
 
 /* .fade {
   animation-name: fade;
@@ -666,6 +617,69 @@ body.hide-scrolling {
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--main-color);
+}
+
+/* Page Loader */
+.page-loader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+  background-color: var(--white-80);
+  backdrop-filter: var(--backdrop-filter-blur);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fade;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
+}
+
+.page-loader div {
+  border: 2px solid transparent;
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.6;
+  border-top-color: transparent !important;
+  border-bottom-color: transparent !important;
+  animation: spin 1s linear infinite;
+}
+
+.page-loader div:nth-child(1) {
+  height: 60px;
+  width: 60px;
+  border-color: var(--orange);
+}
+
+.page-loader div:nth-child(2) {
+  height: 45px;
+  width: 45px;
+  border-color: var(--main-color);
+  animation-duration: 1.2s;
+}
+
+.page-loader div:nth-child(3) {
+  height: 30px;
+  width: 30px;
+  border-color: var(--blue);
+}
+
+@keyframes fade {
+  from {
+    opacity: 1;
+    display: block;
+  }
+  to {
+    opacity: 0;
+    z-index: -100;
+    display: none;
+    height: 0;
+    width: 0;
+    display: none;
+    clip-path: circle(0); /* rognage de la totalité donc disparition*/
+  }
 }
 
 /* Bkg circles */
