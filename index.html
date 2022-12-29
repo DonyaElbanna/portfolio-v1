@@ -633,10 +633,20 @@
             <h2>Get in Touch</h2>
             <div id="contact">
                 <div class="contact-form">
-                    <form action="https://formsubmit.co/donyaelbanna@yahoo.com" method="POST">
-                        <input type="text" placeholder="Email" class="input" required>
-                        <input type="text" placeholder="Subject" class="input" required>
-                        <textarea placeholder="Message" required class="input"></textarea>
+                    <form action="https://formsubmit.co/0d1ad1b846165c8b310e3eb309777688" method="POST">
+
+                        <!-- Honeypot -->
+                        <input type="text" name="_honey" style="display:none;">
+                        <!-- Disable Captcha -->
+                        <input type="hidden" name="_captcha" value="false">
+
+                        <!-- Email Sent -->
+                        <input type="hidden" name="_next"
+                            value="https://donyaelbanna.github.io/portfolio-v1/success.html">
+
+                        <input type="email" placeholder="Email" class="input" required name="from">
+                        <input type="text" placeholder="Subject" class="input" required name="subject">
+                        <textarea placeholder="Message" required class="input" name="email"></textarea>
                         <button type="submit" class="btn submit">Send Email</button>
                     </form>
                 </div>

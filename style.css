@@ -34,6 +34,24 @@ main::before {
   background-attachment: fixed;
 }
 
+/* Success */
+
+.success {
+  height: 83vh;
+  margin: 1.5% auto;
+}
+
+.success h1 {
+  margin-top: 15vh;
+  color: var(--main-color);
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.success-btn {
+  margin-top: 5%;
+}
+
 /* Content */
 
 section {
